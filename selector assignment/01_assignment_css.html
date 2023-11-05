@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector_01</title>
+    <style>
+        ul>li>a{
+            color: #ff0000;
+        }
+        nav>h2{
+            background-color: blueviolet;
+            color: #ccc;
+        }
+        nav>:nth-child(3){
+            color: #ff0000;
+        }
+        a[href]{
+            color: #ff0000;
+            text-decoration: none;
+        }
+        .active{
+            color: blue;
+            text-decoration: underline;
+        }
+a[target="_self"]{
+    background-color: black;
+}
+p:last-child::after{
+    content:"...";
+}
+li::marker {
+color: green;
+}
+p:nth-child(even)::first-letter {
+    color: red;
+    font-size: 30px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h2>TOI</h2>
+            <div>
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="#" target="_blank">Home</a></li>
+                    <li><a href="#" class="active" target="_self">About</a></li>
+                    <li><a href="#" target="_blank">Services</a></li>
+                    <li><a href="#" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+            <p>The Times Of India</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quod minima soluta a sequi possimus quasi expedita voluptatem obcaecati, voluptatum aperiam temporibus quaerat nesciunt est eius maxime maiores accusamus accusantium sunt eligendi ut veniam fugit pariatur debitis! Minus dolorem excepturi fugiat velit? Ullam rem consequatur iusto quod, praesentium voluptates repellendus. Laborum ratione modi incidunt hic porro, in libero voluptate est!</p>
+
+            <p>read articles</p>
+        </nav>
+    </header>
+</body>
+</html>
